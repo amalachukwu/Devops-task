@@ -1,5 +1,7 @@
+const APIURL = process.env.REACT_APP_APIURL || 'http://localhost:8080';
 export const signInAPICall = (data) => {
-  return fetch('http://localhost:8080/api/login', {
+  console.log(APIURL, '/api/login')
+  return fetch(APIURL+'/api/login', {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -14,12 +16,12 @@ export const signInAPICall = (data) => {
 }
 
 export const exploreAPICall = () => {
-  return fetch('http://localhost:8080/api/allSketches', {
+  return fetch(APIURL+'/api/allSketches', {
     method: "GET",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      'Access-Control-Allow-Origin': 'http://localhost:8080/'
+      'Access-Control-Allow-Origin': APIURL+'/'
     }
   }).then(response => {
     return response.json();
@@ -28,7 +30,7 @@ export const exploreAPICall = () => {
 }
 
 export const metadataAPICall = async (data) => {
-  return fetch('http://localhost:8080/api/metaData', {
+  return fetch(APIURL+'/api/metaData', {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -43,7 +45,7 @@ export const metadataAPICall = async (data) => {
 }
 
 export const updateSketchAPICall = async (data) => {
-  return await fetch('http://localhost:8080/api/updateSketch', {
+  return await fetch(APIURL+'/api/updateSketch', {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -58,7 +60,7 @@ export const updateSketchAPICall = async (data) => {
 }
 
 export const editAPICall = (data) => {
-  return fetch('http://localhost:8080/api/sketchWithUserInfo', {
+  return fetch(APIURL+'/api/sketchWithUserInfo', {
     method: "POST",
     headers: {
       Accept: "application/json",
