@@ -7,14 +7,9 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const PORT = process.env.PORT || 8080;
+const PORT = 8080;
 
-var io = require('socket.io')(http, {
-  cors: {
-    origin: "http://localhost:3000",
-    methods: ["GET", "POST"]
-  }
-})
+var io = require('socket.io')(http)
 dotenv.config();
 app.use(cors());
 app.use(morgan('dev'));
@@ -40,13 +35,17 @@ io.on('connection', (socket)=> {
 })
 
 
-http.listen(PORT, function () {
+var server = http.listen(PORT, function () {
   console.log(`Example app listening on port ${PORT}!`);
 });
+
+server.on('close', function () {   
+    mongoose.connection.close()
+  });
 
 // server.listen(app.get('port'))
 const profileRoutes = require('./routes/profile');
 const sketchRoutes = require('./routes/sketch');
 app.use("/api", profileRoutes);
 app.use("/api", sketchRoutes);
-
+module.exports = server;
