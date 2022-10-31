@@ -114,6 +114,7 @@ class Edit extends React.Component {
     };
 
     _addText = () => {
+        console.log(9999, sessionStorage, this)
         this.root.timeout = setTimeout((data) => {
             //console.log("in TImeout")
             this._sketch.addText(this.state.text);

@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Jest Snapshot testing suite Matches DOM Snapshot 1`] = `
+<div
+  className="login-container"
+>
+  <div
+    className="container"
+    style={
+      Object {
+        "marginLeft": "10px",
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <img
+        align="middle"
+        alt="logo"
+        className="img"
+        src="naya_logo.png"
+        style={
+          Object {
+            "height": "40px",
+            "marginLeft": "15px",
+            "marginTop": "35px",
+            "width": "60px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="row"
+      style={
+        Object {
+          "marginTop": "40px",
+        }
+      }
+    >
+      <div
+        className="col-12 col-md-1"
+        style={
+          Object {
+            "fontSize": "45px",
+          }
+        }
+      >
+        Naya
+      </div>
+      <div
+        className="col-12 col-md-6 offset-md-3"
+        style={
+          Object {
+            "fontSize": "45px",
+          }
+        }
+      >
+        Login
+      </div>
+    </div>
+    <div
+      className="row"
+      style={
+        Object {
+          "marginTop": "40px",
+        }
+      }
+    >
+      <div
+        className="col-sm-12 col-md-6 offset-md-3"
+      >
+        <input
+          className="form-control"
+          onChange={[Function]}
+          placeholder="Username"
+          style={
+            Object {
+              "borderRadius": "25px",
+              "boxShadow": "2px 2px 5px grey",
+              "fontSize": "25px",
+              "height": "50px",
+              "margin": "15px",
+              "paddingLeft": "30px",
+            }
+          }
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-12 col-md-6 offset-md-3"
+      >
+        <input
+          className="form-control"
+          onChange={[Function]}
+          placeholder="Password"
+          style={
+            Object {
+              "borderRadius": "25px",
+              "boxShadow": "2px 2px 5px grey",
+              "fontSize": "25px",
+              "height": "50px",
+              "margin": "15px",
+              "paddingLeft": "30px",
+            }
+          }
+          type="Password"
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-12 col-md-6 offset-md-3"
+      >
+        <div>
+          <button
+            onClick={[Function]}
+            style={
+              Object {
+                "background": undefined,
+                "border": "grey 3px",
+                "borderRadius": "25px",
+                "boxShadow": "2px 2px 5px grey",
+                "color": "grey",
+                "fontSize": "25px",
+                "height": "50px",
+                "margin": "15px",
+                "width": "100%",
+              }
+            }
+          >
+            Your Favourite Color?
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-12 col-sm-6 offset-sm-3"
+      >
+        <button
+          aria-label={null}
+          className="login-button btn btn-secondary"
+          data-testid="submit"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "#403368",
+              "borderRadius": "25px",
+              "color": "fff",
+              "fontSize": "25px",
+              "height": "50px",
+              "margin": "15px",
+              "marginTop": "5%",
+              "width": "100%",
+            }
+          }
+          type="button"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -30,6 +30,7 @@ class Explore extends React.Component {
           <Row>
             <Col>
               <Button
+                data-testid="logout-button"
                 className="login-button"
                 style={{
                   backgroundColor: '#fff',
@@ -45,6 +46,7 @@ class Explore extends React.Component {
           </Row>
           <Row style={{ fontSize: '35px' }}>
             <Button
+              data-testid="login-button"
               className="login-button"
               style={{
                 backgroundColor: '#403368',

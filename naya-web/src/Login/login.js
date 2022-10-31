@@ -96,6 +96,7 @@ class Login extends React.Component {
                     <Row>
                         <Col xs="12" sm={{ size: 6, offset: 3 }}>
                             <Button
+                                data-testid="submit"
                                 className="login-button"
                                 style={{
                                     backgroundColor: '#403368',
